@@ -64,9 +64,6 @@
   --bs-body-bg: #fff;
 }
 
-
-
-
 *,
 *::before,
 *::after {
@@ -303,10 +300,7 @@ figure {
 
 img,
 svg {
-  width: 150px;
-  height: 150px;
   vertical-align: middle;
-  border-radius: 50%;
 }
 
 table {
@@ -641,7 +635,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  width: 100%;
+  width: 80%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
