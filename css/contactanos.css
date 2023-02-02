@@ -1,0 +1,24 @@
+* {
+    background-color: #F0F4F7;
+}
+
+.header {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 33px;
+    line-height: 39px;
+    padding: 10px;
+
+}
+
+.form-control {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2.67907px solid #E7E7E7;
+    border-radius: 28px;
+    margin: 25px;
+}
+
+.redes{
+    margin-bottom: 30px;
+}
