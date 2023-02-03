@@ -8,12 +8,8 @@ let message = document.getElementById("messsage");
 document.getElementById("sendData").addEventListener("click", function(event){
     event.preventDefault();
 
-    if(fname.value === ""){
-        console.log(alert("Llena el campo: Nombre"));
-        return;
-    }
-    if(lastName.value === ""){
-        console.log(alert("Llena el campo: Apellido"));
+    if(fname.value === " " && lastName.value ===" "){
+        console.log(alert("Llena el campo: Nombre o Apellido"));
         return;
     }
     if(email.value.search('@')===-1){
@@ -30,4 +26,3 @@ document.getElementById("sendData").addEventListener("click", function(event){
     }
 
 });
-
