@@ -1,22 +1,26 @@
-let fname = document.getElementById("name");
+let fname = document.getElementById("fname");
 let lastName = document.getElementById("lname");
 let email = document.getElementById("email");
 let phone = document.getElementById("phone");
-let message = document.getElementById("messsage");
+let message = document.getElementById("message");
 
 
-document.getElementById("sendData").addEventListener("click", function(event){
+document.getElementById("formularioid").addEventListener("submit", function(event){
     event.preventDefault();
 
-    if(fname.value === " " && lastName.value ===" "){
+    if(fname.value === " "){
         console.log(alert("Llena el campo: Nombre o Apellido"));
         return;
     }
-    if(email.value.search('@')===-1){
+    if(lastName.value ===" "){
+        console.log(alert("Llena el campo: Apellido"));
+        return;
+    }
+    if(email.value.search('@')===-1 || email.value === ""){
         console.log(alert("Llena el campo: Correo electrónico"));
         return;
     }
-    if(phone.value < 10){
+    if(phone.value.length !== 10 || phone.value === ""){
         console.log(alert("Llena el campo: Telefono con 10 digitos"));
         return;
     }
@@ -24,5 +28,9 @@ document.getElementById("sendData").addEventListener("click", function(event){
         console.log(alert("Ingresa un comentario"));
         return;
     }
+    let form = document.getElementById("formularioid")
+    
+    form.submit();
+    
 
 });
