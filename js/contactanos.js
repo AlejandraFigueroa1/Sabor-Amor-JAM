@@ -4,7 +4,6 @@ let email = document.getElementById("emailid");
 let phone = document.getElementById("phoneid");
 let message = document.getElementById("messageid");
 
-
 document.getElementById("formularioid").addEventListener("submit", function(event){
     event.preventDefault();
     
@@ -20,7 +19,6 @@ document.getElementById("formularioid").addEventListener("submit", function(even
         console.log(alert("Llena el campo o asegurate que este bien escrito: Correo electrónico"));
         return;
     }
-    
     if(phone.value.length !== 10 || phone.value === ""){
         console.log(alert("Llena el campo: Telefono con 10 digitos"));
         return;
